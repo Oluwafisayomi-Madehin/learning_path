@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+            <title> MXIT </title>
+            <script type="application/javascript">
+                function checkData(){
+                    //Create references to input elements we wish to validate
+                    var username = document.getElementById("name");
+                    var Password = document.getElementById("password")
+
+                    //check if username or email field is empty
+                    if(username.value == ""){
+                        alert("please enter the name");
+                        username.focus();
+                        return false;
+                    }
+                    //check if username or email field is empty
+                    if(password.value == ""){
+                        alert("please enter the password");
+                        password.focus();
+                        return false;
+                    }
+                    //If all is well return true.
+                        return true;
+                }
+            </script>
+      </head>
+      <body style="background-color:skyblue">
+         <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 70px; color:blue; text-align: center;">MXIT</h2>
+         <form action="/register">
+       <center> <fieldset style="background-color:whitesmoke; width:0px">   
+           <center> <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;" for="Username or Email">Username or Email :</label><br><br></center>
+           <center> <input style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;" type="text" id="Username or Email" placeholder="Username or Email;" size="50"></center>
+           <center> <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px;" for="Password">Password :</label><br><br></center>
+           <center> <input style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 20px;" type="text" id="Password" placeholder="Password;" size="50"></center>
+           <br><br>
+           <center> <input style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: bolder; font-size: 30px; background-color:greenyellow;" type="submit" value="SUBMIT"></center>
+        </fieldset> </center>
+         </form>
+      </body>
+</html>
